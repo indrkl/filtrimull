@@ -15,17 +15,10 @@ function findGetParameter(parameterName) {
 }
 
 function onLoad(){
-	word = document.getElementById("word").value = findGetParameter("word");
-	var lang = findGetParameter("language");
-	if (lang)
-		document.getElementById("language").value = lang;
-	else
-		lang = document.getElementById("language").value = "ee";
-	console.log(lang + " " + word);
-	//changeData();
+	var word = document.getElementById("word").value = findGetParameter("word");
+	var lang = document.getElementById("language").value = findGetParameter("language");
 	objectInnerString = '<object width="100%" height="1000px" style="styes.c name="content" type="text/html" id="contentFile" data="' + lang + '-' + word + '.html"/>';
 	document.getElementById("objectDiv").innerHTML = objectInnerString;
-
 }
 
 function changeData(){
@@ -33,7 +26,6 @@ function changeData(){
 	lang = document.getElementById("language").value;
 	word = document.getElementById("word").value;
 	data = lang + '-' + word + '.html';
-	console.log(data);
 	obj.data = data;
 }
 
