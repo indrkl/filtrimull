@@ -1,0 +1,23 @@
+body {
+	text-align: center;
+	padding-top: 100px;
+}
+
+table{
+	text-align: inherit;
+	width: 100%;
+}
+
+img{
+	padding-left:10px;
+	padding-right:10px;
+	padding-bottom:10px;
+	max-height:200px;
+	width:auto;
+	line-height: 210px;
+
+}
+
+#imagesBody {
+	padding-top: 0px;
+}
